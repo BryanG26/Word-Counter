@@ -309,13 +309,13 @@ footer {
     }
 
     .lang-btn {
-        padding: 6px;
-        font-size: 10px;
+        padding: 12px 20px;
+        font-size: 14px;
     }
 
     button {
-        font-size: 10px;
-        padding: 4px 8px;
+        font-size: 14px;
+        padding: 12px 20px;
     }
 
     .Language {
