@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
             Fourminutes: "4 minutes",
             Fiveminutes: "5 minutes",
             footerLabel: "Copyright 2024 ©",
-            footerLabel2: "Made by Bryan Pérez González."
+            footerLabel2: "Developed by Bryan Pérez González."
         },
         es: {
             title: "Contador de Palabras",
