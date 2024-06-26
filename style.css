@@ -262,6 +262,11 @@ footer {
         align-items: center;
     }
 
+    .textarea-container-Image {
+        width: 100px;
+        padding-left: 5%;
+    }
+
     .Title-container {
         text-align: center;
     }
