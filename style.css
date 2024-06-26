@@ -74,7 +74,7 @@ body {
 .Title { 
     font-size: 70px;
     text-align: left;
-    padding-left: 13%;
+    padding-left: 20%;
     color: #69eebb;
 }
 
@@ -252,19 +252,23 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .info-container-Title{
-        padding-left: 10%;
-        width: 100%;
+
+    .info-container-Title {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Title-container {
+        text-align: center;
     }
 
     .Title {
-        font-size: 30px;
-        padding-left: 0%;
+        font-size: 40px;
     }
 
     .container {
         margin-left: 0px;
-        width: 74%;
+        width: 96%;
         padding: 5px;
     }
 
@@ -308,12 +312,13 @@ footer {
     }
 
     .Language {
-        width: 75%;
+        width: auto;
         padding: 5px;
     }
 
     footer {
-        width: 74%;
+        width: auto;
+        height: auto;
         padding: 10px;
     }
 }
