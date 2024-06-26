@@ -10,11 +10,15 @@
 
 <body>
     <div id="idLanguage" class="Language">
-        <div class="info-container-Title">
-            <div class="textarea-container-Image">
-                <img src="images/book.png" alt="Book Icon" class="icon">
+        <div class="Title-Logo">
+            <div class="info-container-Title">
+                <div class="textarea-container-Image">
+                    <img src="images/book.png" alt="Book Icon" class="icon">
+                </div>
+                <div class="Title-container">
+                    <h1 data-key="title" id="title" class="Title">Word Counter</h1>
+                </div>
             </div>
-            <h1 data-key="title" id="title" class="Title">Word Counter</h1>
         </div>
         <label data-key="selectLanguage">Select the Language:</label>
         <button id="btnEnglish" class="lang-btn active" data-lang="en">English</button>
@@ -62,22 +66,17 @@
 
     <script src="word-counter.js"></script>
     <script>
-        // Obtener referencia a los botones de idioma
         var btnEnglish = document.getElementById('btnEnglish');
         var btnSpanish = document.getElementById('btnSpanish');
 
-        // Obtener referencia al título
         var title = document.getElementById('title');
 
-        // Agregar listeners para los botones de idioma
         btnEnglish.addEventListener('click', function() {
-            // Restaurar el padding izquierdo original en inglés
-            title.style.paddingLeft = '20%';
+            title.style.paddingLeft = '13%';
         });
 
         btnSpanish.addEventListener('click', function() {
-            // Reducir el padding izquierdo para español
-            title.style.paddingLeft = '13%'; // Ajusta el valor según tus necesidades
+            title.style.paddingLeft = '2%';
         });
     </script>
 </body>

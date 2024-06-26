@@ -5,29 +5,6 @@ body {
     margin: 0;
 }
 
-.icon {
-    width: 150px; 
-    height: auto; 
-    margin-top: 10px;
-    padding-left: 80%;
-}
-
-.Title { 
-    text-align: center;
-    font-size: 70px;
-    color: #69eebb;
-    padding-left: 20%;
-    /*text-decoration: underline;*/
-}
-
-.info-container-Title{
-    display: flex;
-}
-
-.textarea-container-Image {
-    flex: 0; 
-}
-
 .Language {
     background-color: #0080e9;
     color: #ffffff;
@@ -66,6 +43,39 @@ body {
 
 .lang-btn:not(.active):focus {
     outline: none;
+}
+
+.Title-Logo{
+    width: 100%;
+}
+
+.textarea-container-Image {
+    width: 100%;
+    padding-left: 10%;
+    flex: 0;
+}
+
+.info-container-Title {
+    display: flex;
+    width: 100%;
+    flex: 1;
+}
+
+.Title-container {
+    width: 100%;
+}
+
+.icon {
+    width: 150px; 
+    height: auto;
+    margin-top: 10px;
+}
+
+.Title { 
+    font-size: 70px;
+    text-align: left;
+    padding-left: 13%;
+    color: #69eebb;
 }
 
 .container {
@@ -164,4 +174,146 @@ footer {
     border-top: 1px solid #ccc;
     font-size: 14px;
     color: #ffffff;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+
+    .info-container-Title {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textarea-container-Image {
+        width: 100px;
+        padding-left: 15%;
+    }
+
+    .Title-container {
+        text-align: center;
+    }
+
+    .Title {
+        font-size: 40px;
+        padding-left: 0%;
+        text-align: center;
+    }
+
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .icon {
+        display: block;
+        width: 60px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 200px;
+    }
+
+    .info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textarea-container {
+        width: 100%;
+    }
+
+    .controls-container {
+        width: 100%;
+    }
+
+    .control-row {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .lang-btn {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .Language {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-container-Title{
+        padding-left: 10%;
+        width: 100%;
+    }
+
+    .Title {
+        font-size: 30px;
+        padding-left: 0%;
+    }
+
+    .container {
+        margin-left: 0px;
+        width: 74%;
+        padding: 5px;
+    }
+
+    .icon {
+        width: 60px;
+        margin-top: 50px;
+        padding-left: 2%;
+    }
+
+    textarea {
+        width: 100%;
+        height: 150px;
+    }
+
+    .info-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .textarea-container {
+        width: 100%;
+    }
+
+    .controls-container {
+        width: 100%;
+    }
+
+    .control-row {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .lang-btn {
+        padding: 6px;
+        font-size: 10px;
+    }
+
+    button {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+
+    .Language {
+        width: 75%;
+        padding: 5px;
+    }
+
+    footer {
+        width: 74%;
+        padding: 10px;
+    }
 }
