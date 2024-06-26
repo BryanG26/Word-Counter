@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="idLanguage" class="Language">
+        <div class="info-container-Title">
+            <div class="textarea-container-Image">
+                <img src="images/book.png" alt="Book Icon" class="icon">
+            </div>
+            <h1 data-key="title" id="title" class="Title">Word Counter</h1>
+        </div>
+        <label data-key="selectLanguage">Select the Language:</label>
+        <button id="btnEnglish" class="lang-btn active" data-lang="en">English</button>
+        <button id="btnSpanish" class="lang-btn" data-lang="es">Español</button>
+    </div>
+    <div class="container">
+        <label class="titleArea" for="textbox" data-key="enterWords">Type your words</label>
+        <div class="info-container">
+            <div class="textarea-container">
+                <textarea id="textbox" rows="4" cols="50" disabled></textarea>
+            </div>
+            <div class="controls-container">
+                <div class="control-row">
+                    <label id="wordCount">Words: 0</label>
+                </div>
+                <div class="control-row">
+                    <label for="timeSelect" data-key="selectTime">Select time:</label>
+                    <select id="timeSelect" disabled>
+                        <option value="60" data-key="Oneminute">1 minute</option>
+                        <option value="120" data-key="Twominutes">2 minutes</option>
+                        <option value="180" data-key="Threeminutes">3 minutes</option>
+                        <option value="240" data-key="Fourminutes">4 minutes</option>
+                        <option value="300" data-key="Fiveminutes">5 minutes</option>
+                    </select>
+                </div>
+                <div class="control-row">
+                    <label id="timer" data-key="timeRemaining">Time remaining: 60 seconds</label>
+                </div>
+                <div class="control-row">
+                    <button id="startBtn" data-key="start">Start</button>
+                    <button id="pauseBtn" data-key="pause" disabled>Pause</button>
+                    <button id="resetBtn" data-key="reset">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <label class="footerLabel2" data-key="footerLabel2">Developed by Bryan Pérez González."</label>
+            <br>
+            <label class="footerLabel" data-key="footerLabel"> "Copyright 2024 ©</label>
+        </div>
+    </footer>
+
+    <script src="word-counter.js"></script>
+    <script>
+        // Obtener referencia a los botones de idioma
+        var btnEnglish = document.getElementById('btnEnglish');
+        var btnSpanish = document.getElementById('btnSpanish');
+
+        // Obtener referencia al título
+        var title = document.getElementById('title');
+
+        // Agregar listeners para los botones de idioma
+        btnEnglish.addEventListener('click', function() {
+            // Restaurar el padding izquierdo original en inglés
+            title.style.paddingLeft = '20%';
+        });
+
+        btnSpanish.addEventListener('click', function() {
+            // Reducir el padding izquierdo para español
+            title.style.paddingLeft = '13%'; // Ajusta el valor según tus necesidades
+        });
+    </script>
+</body>
+
+</html>

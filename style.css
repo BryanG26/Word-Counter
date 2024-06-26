@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    height: 100vh;
+    margin: 0;
+}
+
+.icon {
+    width: 150px; 
+    height: auto; 
+    margin-top: 10px;
+    padding-left: 80%;
+}
+
+.Title { 
+    text-align: center;
+    font-size: 70px;
+    color: #69eebb;
+    padding-left: 20%;
+    /*text-decoration: underline;*/
+}
+
+.info-container-Title{
+    display: flex;
+}
+
+.textarea-container-Image {
+    flex: 0; 
+}
+
+.Language {
+    background-color: #0080e9;
+    color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.Language label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.lang-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    background-color: transparent;
+}
+
+.lang-btn.active {
+    background-color: #69eebb;
+    color: #fff;
+}
+
+.lang-btn:not(.active):hover {
+    background-color: #69eebb;
+    color: #fff;
+}
+
+.lang-btn:not(.active):focus {
+    outline: none;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    margin: 0 auto; 
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.titleArea {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.textarea-container {
+    flex: 1; 
+    padding-right: 10px; 
+}
+
+.controls-container {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.control-row {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+textarea {
+    width: 110%; 
+    height: 350px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+label, select, button {
+    margin: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    transition: transform 0.2s ease-in-out; 
+}
+
+button:hover {
+    transform: scale(1.1); 
+}
+
+button:disabled {
+    background-color: #b1aeae;
+    cursor: not-allowed;
+    color: #999;
+}
+
+#startBtn {
+    background-color: #28a745;
+}
+
+#pauseBtn {
+    background-color: #ffc107; 
+}
+
+#resetBtn {
+    background-color: #dc3545;
+}
+
+#languageSelect {
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #0080e9;
+    padding: 35px;
+    text-align: center;
+    margin-top: 6px;
+    border-top: 1px solid #ccc;
+    font-size: 14px;
+    color: #ffffff;
+}
